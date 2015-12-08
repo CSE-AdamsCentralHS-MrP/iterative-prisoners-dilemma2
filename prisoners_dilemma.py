@@ -173,10 +173,10 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
     ######
     ######
     #
-    elif player == 3:
+    elif player == 8:
         if getting_team_name:
             #if there was a previous round just like 
-            return 'loyal vengeful with permanent second impression'
+            return 'loyal vengeful with permanent second impression CAUSE WE CAN'
         else:
             # use history, opponent_history, score, opponent_score
             # to compute your strategy      
@@ -187,7 +187,7 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
                 # do whatever they did in the round that followed it
                 recent_round_opponent = opponent_history[-1]
                 recent_round_me = history[-1]
-                 #go through rounds before that one
+                
                 if 'b' in opponent_history: 
                     return 'b'
                 if history[-1]=='c' and opponent_history[-1]=='b':
