@@ -109,11 +109,15 @@ def get_action(player, history, opponent_history, score, opponent_score, getting
     ######
     #
     # This example player always colludes
-    if player == 0:
+     if player == 0:
         if getting_team_name:
-            return 'loyal'
-        else:
+            return 'Eve-n'
+    else:
+        size = len(history)
+        if(size%2==0):
             return 'c'
+        else:
+            return 'b'
 
     
         
